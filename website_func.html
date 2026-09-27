@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Webiste Function</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="pics/logotrans.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f5e7f0, #e6e9f8);
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-container {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content {
+        background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(106, 27, 154, 0.3);
+      width: 100%;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #4a148c;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #6a1b9a;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      font-size: 22px;
+      color: #6a1b9a;
+      margin-bottom: 10px;
+    }
+
+    .section p, .section ul li {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    video {
+    width: 50%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 20px rgba(106, 27, 154, 0.4);
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+video:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(106, 27, 154, 0.6);
+    border: 3px solid rgba(106, 27, 154, 0.8);
+}
+
+    a {
+      color: #4a148c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    #goTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-color: #d1b3e0;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+}
+
+#goTopBtn:hover {
+    transform: translateY(-4px) scale(1.05);
+    background-color: #b889cc;
+}
+
+#goTopBtn i {
+    font-size: 24px;
+    animation: floatRocket 2s infinite ease-in-out;
+    line-height: 60px;
+}
+
+@keyframes floatRocket {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+  </style>
+</head>
+<body>
+  <button onclick="scrollToTop()" id="goTopBtn" title="Go to Top">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <div class="main-container">
+    <div class="content">
+      <h1>Platform Functionality Overview</h1>
+      <p class="subtitle">A complete solution for Resumes, Questions & Screening</p>
+
+      <div class="section">
+        <h2>Introduction</h2>
+        <p>
+          This <strong>3-in-1 platform</strong> is a comprehensive solution designed to streamline resume management and recruitment processes. It provides the following core functionalities:
+        </p>
+        <ul>
+          <li><a href="resume_templates.php"><strong>Resume Generation</strong></a></li>
+          <li><a href="quiz_question.php"><strong>Question Generation</strong></a></li>
+          <li><a href="resume_screening.php"><strong>Resume Screening System</strong></a></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>1. Resume Upload and Generation</h2>
+        <p>
+          Users can upload their existing resumes to the platform for storage and further processing.
+          For users without a resume, the platform offers a <strong>Resume Generation Tool</strong>. 
+          By collecting basic user info (name, education, experience, skills), the system creates a professional resume.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>2. Question Generation</h2>
+        <p>
+          After analyzing the uploaded or generated resume, the platform uses AI to create 
+          <strong>customized quizzes and interview questions</strong>. These quizzes help recruiters assess candidates more effectively.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>3. Resume Screening System</h2>
+        <p>
+          The platform includes a <strong>Resume Screening System</strong> that evaluates and ranks resumes based on predefined criteria. 
+          It highlights strengths and weaknesses, providing recruiters with actionable insights.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Why This Platform?</h2>
+        <p>This innovative solution bridges the gap between job seekers and recruiters by:</p>
+        <ul>
+          <li>Simplifying the resume creation and submission process.</li>
+          <li>Empowering recruiters with tools to assess candidates.</li>
+          <li>Reducing manual effort and ensuring a more objective hiring process.</li>
+        </ul>
+      </div>
+    </div>
+
+    <video controls>
+      <source src="pics/websitefunc.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <script>
+    window.onscroll = function () {
+      const btn = document.getElementById("goTopBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>

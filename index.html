@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Talent Vector</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="pics/logotrans.png" type="image/x-icon" />
+</head>
+<body>
+    <button onclick="scrollToTop()" id="goTopBtn" title="Go to Top">
+        <i class="fas fa-rocket"></i>
+    </button>
+<header>
+    <div class="header-container">
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-group">
+              <h2>Talent Vector:</h2>
+              <a class="side-link" href="resume_templates.php">Resume Templates</a>
+              <a class="side-link" href="website_func.html">Website Functionality</a>
+              <a class="side-link" href="how_to_make_resume.html">How to Make a Resume</a>
+              <a class="side-link" href="resume_templates.php">Resume Generation</a>
+              <a class="side-link" href="quiz_question.php">Question Generation</a>
+              <a class="side-link" href="resume_screening.php">Resume Screening System</a>
+            </div>
+            <div class="menu-group">
+              <h2>Support:</h2>
+              <a class="side-link" href="contact.php">Contact Us</a>
+              <a class="side-link" href="faq.php">FAQ</a>
+            </div>
+        </div>
+    </div>      
+    <div class="logo">
+        <a href="index.html" class="logo">
+            <img src="pics/logotrans.png" alt="Talent Vector Logo">
+        </a>
+    </div>
+    <nav class="navbar">
+        <p><a href="index.html">Home</a></p>
+        <div class="dropdown">
+            <p class="dropdown-btn">Resume</p>
+            <div class="dropdown-content">
+                <a href="resume_templates.php">Resume Templates</a> 
+                <a href="how_to_make_resume.html">How to Make a Resume</a>
+                <a href="website_func.html" class="btn">Website Functionality</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p class="dropdown-btn">Services</p>
+            <div class="dropdown-content">
+                <a href="resume_templates.php">Resume Generation</a>
+                <a href="quiz_question.php">Question Generation</a>
+                <a href="resume_screening.php">Resume Screening System</a>
+            </div>
+        </div>
+        <p><a href="contact.php">Contact Us</a></p>
+        <p><a href="faq.php">FAQ</a></p>
+        <p><a href="login.php" class="login-btn">Login</a></p>
+        <p><a href="logout.php" class="logout-btn">Logout</a></p>
+    </nav>
+</header>
+<section class="index" id="Home">
+    <div class="content">
+        <h1>Talent Vector [Resume generator, screening, related questions, related quiz]</h1>
+        <p>Land your next job with one of the best resume builders online. Choose from dozens of templates and add ready-to-use skills and phrases. Millions have trusted our resume maker— and it’s free to use!</p>
+        <div class="buttons">
+            <a href="resume_templates.php" class="primary-btn">Create my Resume</a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="pics/hpresume.png" />
+    </div>
+</section>
+<section class="func" id="how-it-works">
+    <div class="content">
+        <h1>How does our website function?</h1> 
+        <p>It is a multi-functional platform designed to handle all aspects of resume management and processing. Here's how it works:</p>
+        <p><b>1. Resume Generation:</b> Users can upload their resumes directly. For those who do not have a resume, the platform leverages AI to generate one based on user-provided information.</p>
+        <p><b>2. Question Generation:</b> After analyzing the uploaded or generated resumes, the generates tailored quizzes and questions to assess the user's skills and knowledge.</p>
+        <p><b>3. Resume Screening System:</b> The platform includes a robust screening mechanism to evaluate resumes, helping employers or recruiters identify suitable candidates efficiently. This comprehensive system simplifies 
+            the job application and recruitment process by combining advanced resume generation, 
+            skill assessment, and screening into a single platform.</p>
+            <a href="website_func.html" class="secondary-btn2">Learn More</a> 
+    </div>
+</section>
+<section class="provide" id="what-we-provide">
+    <div class="content">
+        <h1>What we Provide:</h1>
+        <p>Our platform offers a wide range of features and services to cater to the diverse needs.</p>
+    </div>
+
+    <div class="features-wrapper">
+        <div class="feature">
+            <img src="pics/resume.png" class="feature-img" />
+            <a href="resume_templates.php" class="primary-btn1">Resume Generation</a>
+        </div>
+        <div class="feature">
+            <img src="pics/questionmark.png" class="feature-img" />
+            <a href="quiz_question.php" class="secondary-btn5">Question Generation</a>
+        </div>
+        <div class="feature">
+            <img src="pics/screening.png" class="feature-img" />
+            <a href="resume_screening.php" class="secondary-btn3">Resume Screening System</a>
+        </div>
+    </div>
+</section>
+
+<section class="result" id="resume-results">
+    <div class="content">
+      <h1>Make a Resume that gets Results:</h1>
+    </div>
+  
+    <div class="steps-wrapper">
+      <div class="step">
+        <img src="pics/STEP 1.png" class="step-img" />
+        <p>Choose a resume template</p>
+      </div>
+      <div class="step">
+        <img src="pics/STEP 2.png" class="step-img" />
+        <p>Add skills and bullet points </p>
+      </div>
+      <div class="step">
+        <img src="pics/STEP 3.png" class="step-img" />
+        <p>Finish your resume in minutes</p>
+      </div>
+    </div>
+  
+    <div class="buttons-container">
+      <a href="resume_templates.php" class="primary-btn1">Create my Resume</a>
+    </div>
+  </section>
+  
+  <section class="protemp" id="pro-temp">
+    <div class="content">
+        <h1>Choose your Professional template:</h1>
+        <p>Select one of the Resume Templates below. Fill it in with text inspired by your work experience. 
+            These professional templates have been tested in the real world and proven to bypass HR screening software. 
+            Rest easy knowing that your resume will land in human hands.</p>
+    </div>
+
+    <div class="template-wrapper">
+        <div class="template">
+            <img src="pics/11.png" alt="Creative Resume">
+            <a href="resume_templates.php" class="primary-btn1">Creative Resume</a>
+        </div>
+        <div class="template">
+            <img src="pics/12.png" alt="Simple Resume">
+            <a href="resume_templates.php" class="secondary-btn5">Simple Resume</a>
+        </div>
+        <div class="template">
+            <img src="pics/13.png" alt="Modern Resume">
+            <a href="resume_templates.php" class="secondary-btn3">Modern Resume</a>
+        </div>
+    </div>
+</section>
+
+<section class="wchooseus" id="why-choose-us">
+    <div class="content">
+        <h1>Why choose us?</h1>
+        <p>Our platform offers a wide range of features and services to cater to diverse needs.</p>
+    </div>
+    <div class="content-section">
+        <div>
+            <h2>New, professional designs</h2>
+            <p>Choose from a wide range of styles for every job level and type. From fun and creative to simple 
+                and modern, there’s a perfect design for everyone.</p>
+        </div>        
+        <div class="image">
+            <img src="pics/18.png" alt="Professional Designs" />
+        </div>
+    </div>
+    <div class="content-section">
+        <div>
+            <h1>ATS-friendly</h1>
+            <p>Employers use applicant tracking systems (ATS) to filter out candidates. 
+                With our templates, be confident knowing that your ATS-friendly 
+                resume will reach the hiring manager successfully.</p>
+        </div>
+        <div class="image">
+            <img src="pics/19.png" alt="ATS-Friendly Templates" />
+        </div>
+    </div>
+    <div class="content-section">
+        <div>
+            <h1>Step-by-step support</h1>
+            <p>Our Resume Creator provides detailed tips and advice throughout the process, 
+                with customer support ready to assist you anytime.</p>
+            </div>        
+        <div class="image">
+            <img src="pics/20.png" alt="Step-by-Step Support" />
+        </div>
+    </div>
+    <div class="content-section">
+        <div>
+            <h1>Unlimited resumes</h1>
+            <p>Make and edit unlimited resumes, experiment with multiple templates, 
+                and download your resumes in various file formats.</p>
+        </div>
+        <div class="image">
+            <img src="pics/21.png" alt="Unlimited Resumes" />
+        </div>
+    </div>
+</section>
+<section class="findinspiration" id="find-inspiration">
+    <div class="content">
+        <h1>Find inspiration in real-world examples:</h1>
+        <p>Browse 100+ popular resume examples covering all types of jobs, industries and levels of experience.</p>
+    </div>
+
+    <div class="inspiration-wrapper">
+        <div class="inspiration-card">
+            <img src="pics/2.png" alt="Teacher Resume">
+            <a href="resume_templates.php" class="primary-btn1">Teacher Resume</a>
+        </div>
+        <div class="inspiration-card">
+            <img src="pics/15.png" alt="College Resume">
+            <a href="resume_templates.php" class="secondary-btn5">College Resume</a>
+        </div>
+        <div class="inspiration-card">
+            <img src="pics/8.png" alt="Nurse Resume">
+            <a href="resume_templates.php" class="secondary-btn3">Nurse Resume</a>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="faq-header">
+        <h1>Talent Vector FAQ:</h1>
+    </div>
+    <div class="faq-content">
+        <div class="faq-item">
+            <h3>What is Talent Vector?</h3>
+            <p>Talent Vector is a platform to create, edit, and optimize resumes for job applications with ease.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How does it work?</h3>
+            <p>You can upload your resume or create a new one using our templates. The AI optimizes it for ATS systems.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is it free to use?</h3>
+            <p>Yes, creating and downloading resumes is free. Premium features are also available.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I contact support?</h3>
+            <p>You can reach out to our support team via email or phone for assistance.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What are the benefits of using Talent Vector?</h3>
+            <p>Our platform offers professional designs, step-by-step support, and unlimited resumes for job seekers.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I find inspiration in real-world examples?</h3>
+            <p>Yes, you can browse popular resume examples covering various jobs, industries, and experience levels.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I get started?</h3>
+            <p>Simply click on the "Create my Resume" button to begin creating your resume with Talent Vector.</p>
+        </div>
+        <a href="faq.php" class="secondary-btn2">Learn More</a>
+    </div>
+    <div class="faq-submit">
+        <h2>Have a Question?</h2>
+        <form action="submit_faq.php" method="POST" class="faq-form">
+            <input type="text" name="question" placeholder="Type your question..." required>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        </div>
+</section>
+<section class="resume-section">
+    <div class="resume-content">
+        <div class="text-content">
+            <h2>Take your resume to the next level</h2>
+            <a href="resume_templates.php" class="secondary-btn3">Create my Resume</a>
+        </div>
+        <div class="image-content">
+            <img src="pics/nextlevel.png"/>
+        </div>
+    </div>
+</section>
+<section class="mission-section">
+    <div class="container">
+        <div class="logo">
+            <img src="pics/logotrans.png" alt="Talent Vector Logo">
+        </div>
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>Talent Vector's mission is to empower job seekers to 
+            create a resume they're confident in by offering a simple resume-building experience.</p>
+        </div>
+        <div class="cta-button">
+            <a href="resume_templates.php" class="primary-btn1">Create my Resume</a>
+        </div>
+    </div>
+</section>
+<section class="infosec" id="info-sec">
+    <div class="resumeinfo">
+        <h1>Talent Vector:</h1>
+        <a href="resume_templates.php" class="btn">Resume Templates</a>
+        <a href="website_func.html" class="btn">Website Functionality</a>
+        <a href="how_to_make_resume.html" class="btn">How to Make a Resume</a>
+        <a href="resume_templates.php" class="btn">Resume Generation</a>
+        <a href="quiz_question.php" class="btn">Question Generation</a>
+        <a href="resume_screening.php" class="btn">Resume Screening System</a>
+    </div>
+
+    <div class="support">
+        <h1>Support:</h1> 
+        <a href="contact.php" class="btn">Contact Us</a>
+        <a href="faq.php" class="btn">FAQ</a>
+    </div>
+
+    <div class="customer-service">
+        <h1>Customer Services:</h1>
+        <p>Phone Number:</p>
+        <p>972-628-8808</p>
+        <p>910-685-7733</p>
+        <p>Email:</p>
+        <p>birwa17082006@gmail.com</p>
+        <p>priyavasava1711@gmail.com</p>
+    </div>
+</section>
+
+<script>
+    window.onscroll = function () {
+      const btn = document.getElementById("goTopBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  
+  
+
+function toggleMenu() {
+  document.getElementById("sideMenu").classList.toggle("open");
+}
+document.querySelectorAll('.side-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById("sideMenu").classList.remove("open");
+  });
+});
+
+</script>
+
+  
+</body>
+</html>

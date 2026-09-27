@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Make a Resume</title>
+  <link rel="shortcut icon" href="pics/logotrans.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f5e7f0, #e6e9f8);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    video {
+    width: 50%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 20px rgba(106, 27, 154, 0.4);
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+video:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(106, 27, 154, 0.6);
+    border: 3px solid rgba(106, 27, 154, 0.8);
+}
+
+
+
+    .content {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(106, 27, 154, 0.3);
+      width: 80%;
+      max-width: 900px;
+      text-align: left;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 28px;
+      color: #4a148c;
+      margin-bottom: 15px;
+    }
+
+    .step {
+      margin-top: 20px;
+      padding: 15px;
+      border-left: 5px solid #6a1b9a;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .step h2 {
+      font-size: 20px;
+      color: #6a1b9a;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #6a1b9a;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+    }
+    #goTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-color: #d1b3e0;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+}
+
+#goTopBtn:hover {
+    transform: translateY(-4px) scale(1.05);
+    background-color: #b889cc;
+}
+
+#goTopBtn i {
+    font-size: 24px;
+    animation: floatRocket 2s infinite ease-in-out;
+    line-height: 60px;
+}
+
+@keyframes floatRocket {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+  </style>
+</head>
+<body>
+  <button onclick="scrollToTop()" id="goTopBtn" title="Go to Top">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <div class="content">
+    <h1>How to Write a Resume in 9 Easy Steps</h1>
+
+    <div class="step">
+      <h2>Step 1: Choose an Appropriate Format</h2>
+      <p>There are three standard formats:</p>
+      <ul>
+        <li><span class="highlight">Chronological:</span> Focuses on work experience.</li>
+        <li><span class="highlight">Functional:</span> Highlights skills and abilities.</li>
+        <li><span class="highlight">Combination:</span> Balances work history and skills equally.</li>
+      </ul>
+      <p>For most job seekers, the <span class="highlight">chronological resume</span> is recommended.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 2: Style Your Resume</h2>
+      <p>Use a well-designed template to make your resume stand out while keeping it professional.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 3: Add Contact Info to the Header</h2>
+      <p>Include:</p>
+      <ul>
+        <li>Your full name</li>
+        <li>Phone number</li>
+        <li>Professional email address</li>
+      </ul>
+      <p><span class="highlight">Avoid</span> including personal details like full address, birth date, or zodiac sign.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 4: Write a Compelling Professional Summary</h2>
+      <p>Your professional summary should be a 3-5 sentence introduction, highlighting your key skills and achievements.</p>
+      <p>If you are new to the workforce, consider using a <span class="highlight">resume objective</span> instead.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 5: Describe Your Work History</h2>
+      <p>List your work experience in reverse-chronological order. Include quantifiable achievements, such as:</p>
+      <ul>
+        <li>Increased customer satisfaction by <span class="highlight">20%</span></li>
+        <li>Reduced processing time by <span class="highlight">30%</span></li>
+      </ul>
+      <p>If you have no experience, emphasize education, volunteer work, or internships.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 6: Emphasize Your Skills</h2>
+      <p>Highlight both <span class="highlight">hard skills</span> (technical abilities) and <span class="highlight">soft skills</span> (communication, teamwork, etc.).</p>
+      <p>Here’s a comparison:</p>
+      <ul>
+        <li><span class="highlight">Hard Skills:</span> Programming, Machine Learning, Data Analysis, Technical Writing.</li>
+        <li><span class="highlight">Soft Skills:</span> Leadership, Adaptability, Problem-Solving, Communication.</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <h2>Step 7: List Your Education and Credentials</h2>
+      <p>Include:</p>
+      <ul>
+        <li>Name and location of the school.</li>
+        <li>Degrees, honors, or relevant coursework.</li>
+      </ul>
+      <p><span class="highlight">Avoid</span> including your GPA unless it's 3.5 or higher.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 8: Add Optional Sections</h2>
+      <p>Optional sections help personalize your resume. Consider adding:</p>
+      <ul>
+        <li>Volunteer work</li>
+        <li>Certifications & Licenses</li>
+        <li>Languages</li>
+        <li>Awards & Honors</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <h2>Step 9: Proofread and Save as a PDF</h2>
+      <p>Review your resume multiple times to avoid typos or formatting errors. Save it as a <span class="highlight">PDF</span> for better formatting retention.</p>
+    </div>
+
+    <div class="step">
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Choose the right resume format.</li>
+        <li>Tailor your resume for each job.</li>
+        <li>Use powerful action verbs.</li>
+        <li>Quantify your achievements.</li>
+        <li>Consider adding a cover letter.</li>
+        <li>Proofread multiple times before submitting.</li>
+      </ul>
+    </div>
+  </div>
+
+  <video controls>
+    <source src="pics/howtomakeresume.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <script>
+    window.onscroll = function () {
+      const btn = document.getElementById("goTopBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>

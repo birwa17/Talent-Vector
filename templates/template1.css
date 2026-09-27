@@ -1,0 +1,83 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdf7ed;
+  color: #222;
+  margin: 40px;
+}
+
+  .resume.template1 {
+    background-color: #fdf7ed;
+    padding: 60px;
+    max-width: 800px;
+    margin: auto;
+    border-left: 5px solid #b08d57;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume.template1 h1 {
+    font-size: 36px;
+    color: #b08d57;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .resume.template1 h2 {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #b08d57;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+  
+  .resume.template1 p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .resume.template1 img {
+    float: right;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+  }
+  
+
+.resume.template1 {
+  background-color: #fdf7ed;
+  padding: 60px;
+  max-width: 800px;
+  margin: auto;
+  border-left: 5px solid #b08d57;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume.template1 h1 {
+  font-size: 36px;
+  color: #b08d57;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.resume.template1 h2 {
+  font-size: 20px;
+  color: #333;
+  border-bottom: 1px solid #b08d57;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.resume.template1 p {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.resume.template1 img {
+  float: right;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}

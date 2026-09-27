@@ -1,0 +1,8 @@
+{
+    "name": "birwa/talent_vector",
+    "description": "birwa/talentvector",
+    "require": {
+        "phpoffice/phpword": "^1.3",
+        "dompdf/dompdf": "^3.1"
+    }
+}
